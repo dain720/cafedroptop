@@ -1,0 +1,314 @@
+/* 
+    main_color: #62534b
+    sub_color: #f3c33c
+
+    logo_color: #dcd5bb
+*/
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: #666;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+a {text-decoration: none;}
+li {list-style-type: none;}
+
+/* banner */
+#visual {
+    position: relative;
+    /* max-width: 1920px; */
+    width: 100%;
+    min-width: 1200px;
+    height: 300px;
+    background-image: url(../images/sub1_mainbanner.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+#visual > .visual_text {
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+#visual h2 {
+    width: 1200px;
+    line-height: 65px;
+    position: relative;
+    color: #dcd5bb;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    /* outline: 1px solid red; */
+    margin-left: 110px;
+    padding-top: 90px;
+}
+#visual p {
+    width: 1200px;
+    position: relative;
+    color: #dcd5bb;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 110px;
+    padding-top: 10px;
+}
+
+
+
+/* lnb */
+#lnb {
+    position: relative;
+    width: 750px;
+    height: 60px;
+    margin: 0 auto;
+    /* outline: 1px solid green; */
+}
+#lnb > .lnb {
+    position: absolute;
+}
+#lnb > .lnb > li {
+    float: left;
+    color: #000;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    /* outline: 1px solid red; */
+}
+#lnb > .lnb > li > a {
+    display: block;
+    color: #35302d;
+    font-size: 15px;
+    font-weight: 500;
+}
+#lnb > .lnb > li > a.active {
+    color: #f3c33c;
+    border-bottom: 5px solid #f3c33c;
+}
+
+.lnb_line {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    border-top: 5px solid #f2f2f2;
+}
+
+/* breadcrumb */
+.breadcrumb {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-transform: uppercase;
+    padding: 20px;
+    /* outline: 1px solid red; */
+    text-align: right;
+    font-size: 12px;
+    color: #777;
+}
+
+.breadcrumb a {
+    color: #777;
+}
+
+
+
+
+/* 브랜드스토리 */
+#content_t {
+    margin: 0 auto;
+    width: 1200px; height: 1140px;
+}
+
+#content_t > .main1_text {
+    padding: 20px 0 30px 0;
+    width: 1200px; height: 110px;
+}
+#content_t > .main1_text > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #62534b;
+    text-transform: uppercase;
+}
+#content_t > .main1_text > h4 {
+    font-weight: 300;
+    color: #62534b;
+}
+
+#content_t .mind01 {
+    width: 1200px; height: 500px;
+    margin-bottom: 35px;
+    position: relative; 
+    /* outline: 1px solid red; */
+    margin: 0 auto;  
+}
+
+#content_t  .main2_text {
+    width: 1200px;
+    margin-top: 80px;
+    /* outline: 1px solid red; */
+}
+#content_t  .main2_text > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #62534b;
+    text-transform: uppercase;
+}
+#content_t  .main2_text > h4 {
+    font-weight: 300;
+    color: #62534b;
+}
+
+#story01 > .mind02  {
+    width: 1200px; height: 440px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#story01 > .mind02 > .imgbox2 {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* 인테리어 컨셉 */
+/* font style */
+#interior {
+    width: 1200px;
+    margin: 0 auto;
+}
+#interior > .main3_text {
+    width: 1200px;
+    margin-top: 170px;
+    margin-bottom: 35px;
+    /* outline: 1px solid red; */
+}
+#interior > .main3_text > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #62534b;
+    text-transform: uppercase;
+}
+#interior > .main3_text > h4 {
+    font-weight: 300;
+    color: #62534b;
+}
+
+/* interior factory */
+#interior > .interior_factory {
+    width: 1200px;
+    position: relative;
+}
+#interior > .interior_factory > .factory_text {
+    display: block;
+    float: left;
+    width: 380px; height: 244px;
+    background: #faf5e7;
+    /* outline: 1px solid red; */
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.interior_factory img {
+    width: 400px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+#interior > .interior_factory {
+    width: 1200px; height: 244px;
+    margin-bottom: 25px;
+}
+.interior_factory p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #62534b;
+    padding-bottom: 20px;
+}
+.interior_factory span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+/* interior modern */
+#interior > .interior_modern {
+    width: 1200px;
+    position: relative;
+}
+#interior > .interior_modern > .modern_text {
+    display: block;
+    float: left;
+    width: 380px; height: 244px;
+    background: #faf5e7;
+    /* outline: 1px solid red; */
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.interior_modern img {
+    width: 400px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+#interior > .interior_modern {
+    width: 1200px; height: 244px;
+    margin-bottom: 25px;
+}
+.interior_modern p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #62534b;
+    padding-bottom: 20px;
+}
+.interior_modern span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+/* interior vintage */
+#interior > .interior_vintage {
+    width: 1200px;
+    position: relative;
+}
+#interior > .interior_vintage > .vintage_text {
+    display: block;
+    float: left;
+    width: 380px; height: 244px;
+    background: #faf5e7;
+    /* outline: 1px solid red; */
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.interior_vintage img {
+    width: 400px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+#interior > .interior_vintage {
+    width: 1200px; height: 244px;
+    margin-bottom: 100px;
+}
+.interior_vintage p {
+    font-size: 25px;
+    font-weight: 700;
+    color: #62534b;
+    padding-bottom: 20px;
+}
+.interior_vintage span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}

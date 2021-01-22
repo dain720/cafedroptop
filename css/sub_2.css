@@ -1,0 +1,189 @@
+/* sub_2_style.css */
+/* 
+    main_color: #62534b
+    sub_color: #f3c33c
+*/
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    color: #666;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+}
+
+a {text-decoration: none;}
+li {list-style-type: none;}
+
+/* banner */
+#visual {
+    position: relative;
+    /* max-width: 1920px; */
+    width: 100%;
+    min-width: 1200px;
+    height: 450px;
+    background-image: url(../images/sub2_mainbanner.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+#visual > .visual_text {
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+#visual h2 {
+    width: 1200px;
+    line-height: 65px;
+    position: relative;
+    color: #62534b;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: block;
+    /* outline: 1px solid red; */
+    margin-left: 110px;
+    padding-top: 100px;
+}
+#visual p {
+    width: 1200px;
+    position: relative;
+    color: #62534b;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 115px;
+    padding-top: 40px;
+}
+
+/* lnb */
+#lnb {
+    position: relative;
+    width: 1000px;
+    height: 60px;
+    margin: 0 auto;
+    /* outline: 1px solid green; */
+    
+}
+#lnb > .lnb {
+    position: absolute;
+    
+}
+#lnb > .lnb > li {
+    float: left;
+    color: #000;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    /* outline: 1px solid red; */
+}
+#lnb > .lnb > li > a {
+    display: block;
+    color: #35302d;
+    font-size: 15px;
+    font-weight: 500;
+}
+#lnb > .lnb > li > a.active {
+    color: #f3c33c;
+    border-bottom: 5px solid #f3c33c;
+}
+
+.lnb_line {
+    width: 100%;
+    min-width: 1200px;
+    margin: 0 auto;
+    border-top: 5px solid #f2f2f2;
+}
+
+/* breadcrumb */
+.location {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 20px;
+    /* outline: 1px solid red; */
+    text-align: right;
+    color: #777;
+}
+
+/* 신메뉴 배너 */
+#newmenu_banner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+#newmenu_banner img {
+    width: 1200px;
+}
+
+/* 메뉴소개 */
+#newmenu {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    /* background: #ccc; */
+    padding-top: 100px;
+    margin-bottom: 1100px;
+}
+#newmenu .menu_pic li {
+    position: relative;
+    float: left;
+    width: 262.5px;
+    height: 400px;
+    background: #f2f2f2;
+    /* outline: 1px solid red; */
+    margin-right: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+#newmenu .menu_pic li:nth-child(4),
+#newmenu .menu_pic li:nth-child(8) {
+    margin-right: 0;
+}
+#newmenu .menu_pic li img {
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+#newmenu .menu_text {
+    width: 262.5px;
+    /* outline: 1px solid red; */
+    text-align: center;
+    bottom: 0;
+}
+#newmenu .menu_text > .name {
+    display: block;
+    color: #62534b;
+    font-weight: 500;
+    /* outline: 1px solid red; */
+    padding-top: 300px;
+}
+#newmenu .menu_text > .price {
+    display: block;
+    color: #f5bd25;
+    font-weight: bold;
+    /* outline: 1px solid red; */
+    padding-top: 20px;
+}
+
+/* hover 효과 */
+#newmenu > .menu_pic > li:hover  {
+    border-bottom: 7px solid #f3c33c;
+}
+#newmenu > .menu_pic > li > a:hover .name {
+    font-weight: bold;
+    /* font-size: 18px; */
+}
+#newmenu > .menu_pic > li > a:hover img {
+    transform:scale(1.05);
+    transition-duration: 0.4s;
+}
